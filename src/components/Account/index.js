@@ -1,15 +1,15 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native'
 
-import { 
-  Container, 
-  CreateButton, 
-  CreateButtonText, 
-  TextOu, 
-  ImageGoogle, 
-  LogIn, 
-  HaveAccount, 
-  LogInButton, 
+import {
+  Container,
+  CreateButton,
+  CreateButtonText,
+  TextOu,
+  ImageGoogle,
+  LogIn,
+  HaveAccount,
+  LogInButton,
   LogInText } from './styles';
 
 import logo from '../../assets/textOu.png';

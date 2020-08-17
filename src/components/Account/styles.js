@@ -1,11 +1,12 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   align-items: center;
   margin-top: 15px;
 `;
 
-export const CreateButton = styled.TouchableOpacity`
+export const CreateButton = styled(RectButton)`
   background-color: #F9C300;
   border-radius: 4px;
   height: 39px;
@@ -16,7 +17,7 @@ export const CreateButton = styled.TouchableOpacity`
 
 export const CreateButtonText = styled.Text`
   color: #000;
-  font-weight: bold;
+  font-family: 'Montserrat-SemiBold';
   font-size: 16px;
 `;
 
@@ -32,14 +33,15 @@ export const LogIn = styled.View`
 `;
 
 export const HaveAccount = styled.Text`
+  font-family: 'Montserrat-Regular';
   font-size: 14px;
 `;
 
-export const LogInButton = styled.TouchableOpacity``;
+export const LogInButton = styled(RectButton)``;
 
 export const LogInText = styled.Text`
+  font-family: 'Montserrat-SemiBold';
   color: #AF3D61;
-  font-weight: bold;
   padding: 5px;
   font-size: 14px;
 `;
