@@ -1,11 +1,14 @@
 import React from 'react';
 
-import background from '~/assets/background.png';
+import background from '../../assets/background.png';
 
-import Header from '~/components/Header';
-import Account from '~/components/Account';
+import Header from '../../components/Header';
+import Account from '../../components/Account';
 
-import { Container, BackgroundImage } from './styles';
+import { 
+  Container, 
+  BackgroundImage 
+} from './styles';
 
 
 export default function Main () {
