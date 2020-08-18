@@ -1,20 +1,19 @@
 import React from 'react';
 
-import background from '../../assets/background.png';
-
 import Header from '../../components/Header';
 import Account from '../../components/Account';
+import Background from '../../components/BackgroundImage';
 
-import { 
-  Container, 
-  BackgroundImage 
+
+import {
+  Container
 } from './styles';
 
 
 export default function Main () {
   return (
     <>
-      <BackgroundImage source={background} />
+      <Background />
       <Container>
         <Header />
         <Account />

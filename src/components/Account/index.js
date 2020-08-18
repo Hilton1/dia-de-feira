@@ -23,6 +23,10 @@ export default function Account() {
     navigation.navigate('SignUpScreen');
   }
 
+  function navigateToLogInScreen() {
+    navigation.navigate('LogInScreen');
+  }
+
   return(
     <Container>
       <CreateButton onPress={navigateToSignUpScreen}>
@@ -34,7 +38,7 @@ export default function Account() {
 
       <LogIn>
         <HaveAccount>Já tem uma conta?</HaveAccount>
-        <LogInButton onPress={() => {}}>
+        <LogInButton onPress={navigateToLogInScreen}>
           <LogInText>  Entrar</LogInText>
         </LogInButton>
       </LogIn>

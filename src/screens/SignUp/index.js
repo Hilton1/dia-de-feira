@@ -1,12 +1,12 @@
 import React from 'react';
 
-import background from '../../assets/background.png';
+import Background from '../../components/BackgroundImage';
+
 import buttonClient from '../../assets/ButtonClient.png';
 import buttonSupermarket from '../../assets/ButtonSupermarket.png';
 
 import {
   Container,
-  BackgroundImage,
   CreateAccount,
   RegisterContainer,
   TextRegister,
@@ -20,7 +20,7 @@ import {
 export default function Main () {
   return (
     <>
-      <BackgroundImage source={background} />
+      <Background />
       <Container>
         <CreateAccount>Crie sua conta</CreateAccount>
         <RegisterContainer>

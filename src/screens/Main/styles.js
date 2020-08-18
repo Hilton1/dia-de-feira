@@ -12,11 +12,3 @@ export const Container = styled.View`
 export const Test = styled.Text`
   font-size: 20px;
 `;
-
-export const BackgroundImage = styled.Image`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  z-index: 1
-`;

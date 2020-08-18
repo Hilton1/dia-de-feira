@@ -1,14 +1,6 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 
-export const BackgroundImage = styled.Image`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  z-index: 1;
-`;
-
 export const Container = styled.View`
   position: absolute;
   height: 100%;
