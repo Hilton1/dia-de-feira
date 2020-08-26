@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useNavigation } from '@react-navigation/native';
+
 import logo from '../../assets/Logo.png';
 import Background from '../../components/BackgroundImage';
 
@@ -18,6 +20,12 @@ import {
 } from './styles';
 
 export default function LogIn () {
+  const navigation = useNavigation();
+
+  function navigateToSignUp() {
+    navigation.navigate('SignUpScreen');
+  }
+
   return (
     <>
       <Background />
@@ -42,7 +50,7 @@ export default function LogIn () {
               <TextButtonLogIn>Entrar</TextButtonLogIn>
             </ButtonLogIn>
 
-            <ButtonSignUp>
+            <ButtonSignUp onPress={navigateToSignUp} >
               <TextButtonSignUp>Criar uma nova conta</TextButtonSignUp>
             </ButtonSignUp>
 

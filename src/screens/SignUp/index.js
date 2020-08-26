@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useNavigation } from '@react-navigation/native';
+
 import Background from '../../components/BackgroundImage';
 
 import buttonClient from '../../assets/ButtonClient.png';
@@ -18,6 +20,12 @@ import {
  } from './styles';
 
 export default function Main () {
+  const navigation = useNavigation();
+
+  function navigateToClientRegister() {
+    navigation.navigate('ClientRegisterScreen');
+  }
+
   return (
     <>
       <Background />
@@ -26,7 +34,7 @@ export default function Main () {
         <RegisterContainer>
           <TextRegister>Escolha a forma de cadastro</TextRegister>
           <ButtonsContainer>
-            <ButtonClient>
+            <ButtonClient onPress={navigateToClientRegister}>
               <ImageButton source={buttonClient} />
               <TextButton>Cliente</TextButton>
             </ButtonClient>
